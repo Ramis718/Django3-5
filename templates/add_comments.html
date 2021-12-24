@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Comments</title>
+</head>
+<body>
+<div>
+    <form action="/add-comments/" method="BOOk">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Add Comments" />
+    </form>    
+</div>
+</body>
+</html>
